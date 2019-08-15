@@ -1,14 +1,13 @@
 // NPM libraries.
 require("dotenv").config();
 var fs = require("fs");
-var moment = require('moment');
+var moment = require("moment");
 var axios = require("axios");
 const keys = require("./keys.js");
-const Spotify = require('node-spotify-api');
+const Spotify = require("node-spotify-api");
 let spotify = new Spotify(keys.spotify);
 
 // Required variables.
-var spotifyTest = process.env.SPOTIFY_ID
 let command = process.argv[2]
 let searchTerm = process.argv[3]
 
@@ -18,7 +17,7 @@ fs.appendFile('log.txt', command + ",", function (err) {
 
 switch (command){
     case "concert-this":  
-    // Bands in town.
+    // Concerts in town.
         searchBands(searchTerm);
         break;
     case "spotify-this-song":  
@@ -46,7 +45,7 @@ switch (command){
                     console.log("Event Date & Time: " + eventDateTime.format("dddd, MMMM Do YYYY"));
                 }
                 else {
-                    console.log("No results found.");
+                    console.log("No results found. ");
                 }
             }
         ).catch(function (error) {
@@ -68,7 +67,7 @@ switch (command){
             }
         }).catch(function (error) {  
             console.log(error);
-            console.log("No Results found. Showing results for 'The Sign' by Ace of Base");
+            console.log("No Results found.");
       });
     }
 
