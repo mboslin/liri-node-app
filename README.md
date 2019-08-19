@@ -9,7 +9,7 @@
 -	State your role in the app development
 
 
-# LIRI FUNCTIONALITY
+# LIRI Functionality
 
 LIRI is a terminal/bash based node application that takes in commands and gives the user data based off the following callback options: 
 
@@ -46,7 +46,7 @@ This will use this command to retrieve information about the movie that the user
 LIRI will use the text from “random.txt” and call on of LIRI’s commands. 
 
 
-## Technologies Used:
+## Technologies Utilized:
 
 * Spotify API
 * OMDB API
