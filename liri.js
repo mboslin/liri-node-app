@@ -73,10 +73,10 @@ switch (command){
 
     function errSpotify() {
         spotify
-        .search({ type: 'track', query: 'The Sign' })
+        .search({ type: 'track', query: 'Rose Garden' })
         .then(function(response) {
             for (var i=0;i < response.tracks.items.length; i++) {
-                if (response.tracks.items[i].artists[0].name === "Ace of Base") {
+                if (response.tracks.items[i].artists[0].name === "Kupla") {
                     console.log("Artist: " + response.tracks.items[i].artists[0].name);
                     console.log("Track: " + response.tracks.items[i].name);
                     console.log("Preview URL: " + response.tracks.items[i].preview_url);
@@ -106,7 +106,7 @@ switch (command){
                     console.log("RottenTomatoes: " + response.data.tomatoRating);
                 } 
                 else {
-                    movieTitle("Mr. Nobody");
+                    movieTitle("Gone Girl");
                 }
             }
              
