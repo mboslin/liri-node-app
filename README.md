@@ -31,7 +31,7 @@ This will show information about the song submitted in your terminal/bash window
 
 ## movie-this: 
 
-![Screen shot](screenshots/movie-this.jpg)
+![Screen shot](../screenshots/movie-this.jpg)
 
 This will use this command to retrieve information about the movie that the user submited in the terminal/bash window.
 
